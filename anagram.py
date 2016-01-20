@@ -1,5 +1,6 @@
 # mendeteksi 2 kata apakah anagram dari kata tertentu
 # belum bisa mendateksi anagram yang dipisah spasi dan beda besar-kecilnya huruf
+# tes aku tambahin komen
 def anagramSolution(s1, s2):
     # mengubah s2 kedalam bentuk list array
     alist = list(s2)
