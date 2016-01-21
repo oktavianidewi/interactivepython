@@ -1,3 +1,4 @@
+# belajar tipe data dictionary
 import timeit
 import random
 
