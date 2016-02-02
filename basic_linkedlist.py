@@ -1,23 +1,22 @@
 class node:
     def __init__(self, initdata):
         # kalau self.head = None -> there is no nodes in the linked list
-        self.head = None
         self.data = initdata
 
         # kalau self.next = None -> node tersebut adalah node terakhir
-        self.next = None
+        self.selanjutnya = None
 
     def getData(self):
         return self.data
 
     def getNext(self):
-        return self.next
+        return self.selanjutnya
 
     def setData(self, newdata):
         self.data = newdata
 
     def setNext(self, newnext):
-        self.next = newnext
+        self.selanjutnya = newnext
 
 class unorderedlist:
     def __init__(self):
@@ -27,11 +26,11 @@ class unorderedlist:
         return self.head == None
 
     def add(self, item):
-        temp = node(item)
+        newValue = node(item)
         # menyimpan info pointer selanjutnya adalah old head
-        temp.setNext(self.head)
+        newValue.setNext(self.head)
         #  mengisi nilai head baru dengan nilai item
-        self.head = temp
+        self.head = newValue
 
     def size(self):
         current = self.head
